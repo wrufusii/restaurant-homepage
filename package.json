@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrufusii/restaurant-homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrufusii/restaurant-homepage/issues"
+  },
+  "homepage": "https://github.com/wrufusii/restaurant-homepage#readme",
+  "devDependencies": {
+    "webpack": "^5.26.1",
+    "webpack-cli": "^4.5.0"
+  }
+}
