@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
   font-family: "Domine", serif;
@@ -54,7 +54,7 @@ body {
   z-index: 1;
 }
 
-#info {
+#wrapper {
   width: 100vw;
   height: 100vh;
   background-color: #f1edde;
@@ -70,6 +70,32 @@ body {
   width: 100vw;
   align-self: flex-start;
   border: 1px solid #383a3b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-item:hover {
+  opacity: 0.72;
+  cursor: pointer; 
+}
+
+.nav-item-active {
+  background-color: ;
+}
+
+.nav-item p {
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
 }
 
 #container {
@@ -107,4 +133,8 @@ h2 {
   height: 500px;
   padding: 10px;
   display: block;
+}
+
+#menu {
+  width: 80vw;
 }
