@@ -138,3 +138,13 @@ h2 {
 #menu {
   width: 80vw;
 }
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-item-price {
+  margin: auto 0;
+}

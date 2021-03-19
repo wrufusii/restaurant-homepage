@@ -10,3 +10,28 @@ const init = () => {
 }
 
 init();
+
+
+//when tab clicked, clear content div and build new contnet
+document.getElementById('nav-Restaurant').addEventListener('click', changeTab);
+document.getElementById('nav-Menu').addEventListener('click', changeTab);
+document.getElementById('nav-Contact').addEventListener('click', changeTab);
+
+function changeTab(e){
+    let tabClicked = this.id.split('-')[1];
+    console.log(tabClicked);
+
+    //if click, then load js file
+    //make sure to clear out content as part of load
+    switch (tabClicked) {
+        case 'Restaurant' : 
+            buildRestaurant();
+            break;
+        case 'Menu' :
+            buildMenu();
+            break;
+        case 'Contact' :
+            //buildContact();
+            break;
+    }
+}

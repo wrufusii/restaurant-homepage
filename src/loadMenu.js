@@ -25,6 +25,11 @@ const currentMenu = [
         name: 'Another dish',
         description: 'Have this one instead',
         price: "3.00"
+    },
+    {
+        name: 'A third dish',
+        description: 'Perhaps you should choose this one',
+        price: "11.00"
     }
 ];
 
@@ -33,6 +38,7 @@ currentMenu.forEach(item => menuElems.push(createMenuItem(item)))
 
 const buildMenu = () => {
     const contentContainer = document.getElementById('container');
+    contentContainer.innerHTML = "";
     const menu = createElement('div', 'menu');
     contentContainer.appendChild(menu);
 

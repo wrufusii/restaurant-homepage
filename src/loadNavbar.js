@@ -1,5 +1,3 @@
-import changeTab from './index.js'
-
 const createNavItem = (text) => {
     const div = document.createElement('div');
     div.setAttribute('class', 'nav-item')

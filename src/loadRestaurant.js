@@ -9,6 +9,7 @@ blockImg.setAttribute('src', 'https://images.prismic.io/dishoom/f58769918005b95f
 
 const buildRestaurant = () => {
     const contentContainer = document.getElementById('container');
+    contentContainer.innerHTML = "";
     contentContainer.appendChild(copySection).appendChild(subtitle);
     copySection.appendChild(para);
     contentContainer.appendChild(imgContainer).appendChild(blockImg);
